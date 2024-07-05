@@ -4,12 +4,12 @@
 LOG_FILE="/var/log/user_management.log"
 PASSWORD_FILE="/var/secure/user_passwords.csv"
 
-# Function to log messages
+# Function to log messagesS
 log_message() {
     echo "$(date +'%Y-%m-%d %H:%M:%S') - $1" >> $LOG_FILE
 }
 
-# Check if the input file is provided
+# Check if the input file is provided 
 if [ $# -eq 0 ]; then
     echo "Usage: $0 <name-of-text-file>"
     exit 1
